@@ -17,7 +17,7 @@ class EchoTest {
                 .post("/post")
 // Проверки
                 .then()
-                .statusCode(201)
+                .statusCode(200)
                 .contentType(ContentType.JSON)
                 .body("data", equalTo("Shadow"))
 
@@ -37,7 +37,7 @@ class EchoTest {
                 .then()
                 .statusCode(200)
                 .contentType("application/json; charset=utf-8")
-                .body("data", equalTo("666"))
+                .body("data", equalTo("нечто"))
         ;
     }
 }
